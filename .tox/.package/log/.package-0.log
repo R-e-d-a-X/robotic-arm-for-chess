@@ -1,8 +1,0 @@
-action: .package, msg: getenv
-cwd: C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess\.tox
-cmd: 'C:\Users\Tobias\AppData\Local\Programs\Python\Python38\python.exe' -m virtualenv --no-download --python 'C:\Users\Tobias\AppData\Local\Programs\Python\Python38\python.exe' .package
-created virtual environment CPython3.8.1.final.0-64 in 1805ms
-  creator CPython3Windows(dest=C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess\.tox\.package, clear=False, no_vcs_ignore=False, global=False)
-  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Tobias\AppData\Local\pypa\virtualenv)
-    added seed packages: pip==22.2.2, setuptools==65.3.0, wheel==0.37.1
-  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator

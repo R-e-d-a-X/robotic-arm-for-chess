@@ -1,5 +1,0 @@
-action: .package, msg: getenv
-cwd: C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess
-cmd: 'C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess\.tox\.package\Scripts\python.EXE' -m pip install 'setuptools>=42.0' wheel
-Requirement already satisfied: setuptools>=42.0 in c:\users\tobias\pycharmprojects\robotic-arm-for-chess\.tox\.package\lib\site-packages (65.3.0)
-Requirement already satisfied: wheel in c:\users\tobias\pycharmprojects\robotic-arm-for-chess\.tox\.package\lib\site-packages (0.37.1)
