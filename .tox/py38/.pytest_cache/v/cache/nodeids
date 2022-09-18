@@ -1,0 +1,5 @@
+[
+  "tests/Chess_Engine_Tests/Chessengine_test.py::test1",
+  "tests/Chess_Engine_Tests/test_Chessengine.py::test1",
+  "tests/test_Chess_Engine/Chessengine_test.py::test1"
+]

@@ -1,0 +1,71 @@
+action: py38, msg: installpkg
+cwd: C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess
+cmd: 'C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess\.tox\py38\Scripts\python.EXE' -m pip install --exists-action w '.tox\.tmp\package\1\robotic-arm-for-chess-0.0.0.tar.gz'
+Processing c:\users\tobias\pycharmprojects\robotic-arm-for-chess\.tox\.tmp\package\1\robotic-arm-for-chess-0.0.0.tar.gz
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting numpy>=1.20
+  Downloading numpy-1.23.3-cp38-cp38-win_amd64.whl (14.7 MB)
+     --------------------------------------- 14.7/14.7 MB 25.1 MB/s eta 0:00:00
+Collecting stockfish>=3.2
+  Using cached stockfish-3.28.0-py3-none-any.whl (13 kB)
+Collecting matplotlib>=3.3
+  Downloading matplotlib-3.6.0-cp38-cp38-win_amd64.whl (7.2 MB)
+     ---------------------------------------- 7.2/7.2 MB 38.3 MB/s eta 0:00:00
+Collecting scikit-learn>=1.0
+  Downloading scikit_learn-1.1.2-cp38-cp38-win_amd64.whl (7.3 MB)
+     ---------------------------------------- 7.3/7.3 MB 46.9 MB/s eta 0:00:00
+Collecting scikit-image>=0.19
+  Downloading scikit_image-0.19.3-cp38-cp38-win_amd64.whl (12.2 MB)
+     --------------------------------------- 12.2/12.2 MB 54.4 MB/s eta 0:00:00
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.37.2-py3-none-any.whl (959 kB)
+     ------------------------------------- 959.8/959.8 kB 59.4 MB/s eta 0:00:00
+Requirement already satisfied: pyparsing>=2.2.1 in c:\users\tobias\pycharmprojects\robotic-arm-for-chess\.tox\py38\lib\site-packages (from matplotlib>=3.3->robotic-arm-for-chess==0.0.0) (3.0.9)
+Collecting cycler>=0.10
+  Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting pillow>=6.2.0
+  Downloading Pillow-9.2.0-cp38-cp38-win_amd64.whl (3.3 MB)
+     ---------------------------------------- 3.3/3.3 MB 52.7 MB/s eta 0:00:00
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.0.5-cp38-cp38-win_amd64.whl (164 kB)
+     ---------------------------------------- 164.0/164.0 kB ? eta 0:00:00
+Requirement already satisfied: packaging>=20.0 in c:\users\tobias\pycharmprojects\robotic-arm-for-chess\.tox\py38\lib\site-packages (from matplotlib>=3.3->robotic-arm-for-chess==0.0.0) (21.3)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.4.4-cp38-cp38-win_amd64.whl (55 kB)
+     ---------------------------------------- 55.4/55.4 kB 2.8 MB/s eta 0:00:00
+Collecting python-dateutil>=2.7
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting imageio>=2.4.1
+  Downloading imageio-2.21.3-py3-none-any.whl (3.4 MB)
+     ---------------------------------------- 3.4/3.4 MB 71.3 MB/s eta 0:00:00
+Collecting PyWavelets>=1.1.1
+  Downloading PyWavelets-1.4.1-cp38-cp38-win_amd64.whl (4.2 MB)
+     ---------------------------------------- 4.2/4.2 MB 88.6 MB/s eta 0:00:00
+Collecting tifffile>=2019.7.26
+  Downloading tifffile-2022.8.12-py3-none-any.whl (208 kB)
+     ---------------------------------------- 208.5/208.5 kB ? eta 0:00:00
+Collecting scipy>=1.4.1
+  Downloading scipy-1.9.1-cp38-cp38-win_amd64.whl (38.6 MB)
+     --------------------------------------- 38.6/38.6 MB 54.7 MB/s eta 0:00:00
+Collecting networkx>=2.2
+  Downloading networkx-2.8.6-py3-none-any.whl (2.0 MB)
+     ---------------------------------------- 2.0/2.0 MB 64.9 MB/s eta 0:00:00
+Collecting threadpoolctl>=2.0.0
+  Using cached threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Collecting joblib>=1.0.0
+  Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
+     ---------------------------------------- 298.0/298.0 kB ? eta 0:00:00
+Requirement already satisfied: six>=1.5 in c:\users\tobias\pycharmprojects\robotic-arm-for-chess\.tox\py38\lib\site-packages (from python-dateutil>=2.7->matplotlib>=3.3->robotic-arm-for-chess==0.0.0) (1.16.0)
+Building wheels for collected packages: robotic-arm-for-chess
+  Building wheel for robotic-arm-for-chess (pyproject.toml): started
+  Building wheel for robotic-arm-for-chess (pyproject.toml): finished with status 'done'
+  Created wheel for robotic-arm-for-chess: filename=robotic_arm_for_chess-0.0.0-py3-none-any.whl size=15738 sha256=8f531a49ee14e71a88578b4587b75d96612e3d97498b394ac82d7473a6969904
+  Stored in directory: c:\users\tobias\appdata\local\pip\cache\wheels\99\34\dd\e8a2a9228bae4a7b9f1005dad0248d50f5737b66de6e8a0534
+Successfully built robotic-arm-for-chess
+Installing collected packages: threadpoolctl, stockfish, python-dateutil, pillow, numpy, networkx, kiwisolver, joblib, fonttools, cycler, tifffile, scipy, PyWavelets, imageio, contourpy, scikit-learn, scikit-image, matplotlib, robotic-arm-for-chess
+Successfully installed PyWavelets-1.4.1 contourpy-1.0.5 cycler-0.11.0 fonttools-4.37.2 imageio-2.21.3 joblib-1.2.0 kiwisolver-1.4.4 matplotlib-3.6.0 networkx-2.8.6 numpy-1.23.3 pillow-9.2.0 python-dateutil-2.8.2 robotic-arm-for-chess-0.0.0 scikit-image-0.19.3 scikit-learn-1.1.2 scipy-1.9.1 stockfish-3.28.0 threadpoolctl-3.1.0 tifffile-2022.8.12

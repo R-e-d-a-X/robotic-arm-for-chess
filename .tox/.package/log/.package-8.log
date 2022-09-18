@@ -1,0 +1,12 @@
+action: .package, msg: get-build-requires
+cwd: C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess
+cmd: 'C:\Users\Tobias\PycharmProjects\robotic-arm-for-chess\.tox\.package\Scripts\python' 'C:\Users\Tobias\AppData\Local\Programs\Python\Python38\Lib\site-packages\tox\helper\build_requires.py' setuptools.build_meta '' ''
+running egg_info
+writing src\robotic_arm_for_chess.egg-info\PKG-INFO
+writing dependency_links to src\robotic_arm_for_chess.egg-info\dependency_links.txt
+writing requirements to src\robotic_arm_for_chess.egg-info\requires.txt
+writing top-level names to src\robotic_arm_for_chess.egg-info\top_level.txt
+reading manifest file 'src\robotic_arm_for_chess.egg-info\SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src\robotic_arm_for_chess.egg-info\SOURCES.txt'
+[]
