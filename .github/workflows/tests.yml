@@ -5,7 +5,7 @@ on: push
 jobs:
   test:
     name: testing code
-    runs-on: 	windows-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
