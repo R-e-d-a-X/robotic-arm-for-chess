@@ -4,7 +4,7 @@ on: push
 jobs:
   testing:
     name: running tests
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/setup-python@v2
