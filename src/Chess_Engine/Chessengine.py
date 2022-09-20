@@ -2,7 +2,7 @@ from stockfish import Stockfish
 
 ENGINE_PATH = 'C:/Users/Tobias/Chess_Engines/stockfish_15/stockfish_15_x64_avx2'
 THREADS = 8
-DEPTH = 32 
+DEPTH = 20
 HASH = 4069 # allows stockfish to use 4069MB of ram (amt has to be a power of 2 here 4069 = 2^12)
 STARTPOS = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
 
@@ -38,13 +38,30 @@ def get_nicer_eval(eval: dict):
     else:
         raise ValueError
     
-mate_in_one = '7k/8/6R1/5R2/8/2K5/8/8 w - - 0 69'    
-mate_in_three = '7k/8/5R2/5R2/8/2K5/8/8 w - - 0 69'  
-
-stockfish.set_fen_position(mate_in_three)
-print(stockfish.get_board_visual())
-    
-res_eval = stockfish.get_evaluation()    
-
-print(f'Default: {res_eval}')
-print(f'Custom: {get_nicer_eval(res_eval)}')
+# temporary interface since the computervision part is not done yet
+if __name__ == '__main__':
+    print('Move input format: algebraic f.e. e2e4 for moving a piece from e2 to e4')
+    print('You play as white')
+    print(stockfish.get_board_visual())
+    while True:
+        move = [input('Your move: ')]
+        if stockfish.is_move_correct(move[0]):
+            stockfish.make_moves_from_current_position(move)
+            print('calculating')
+            eval = stockfish.get_evaluation()
+            if eval['type'] == 'mate' and eval['value'] == 0:
+                print('You have won')
+                break
+            
+            stockfish_move = stockfish.get_best_move()
+            stockfish.make_moves_from_current_position([stockfish_move])
+            
+            print(stockfish.get_board_visual())
+            
+            print(f"Stockfish plays: {stockfish_move}")
+            eval = stockfish.get_evaluation()
+            if eval['type'] == 'mate' and eval['value'] == 0:
+                print('You have lost')
+                break
+        else:
+            print('That is not a legal move')
